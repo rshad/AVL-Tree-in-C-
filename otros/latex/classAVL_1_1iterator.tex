@@ -1,0 +1,115 @@
+\hypertarget{classAVL_1_1iterator}{\section{A\-V\-L$<$ T, comparar $>$\-:\-:iterator Class Reference}
+\label{classAVL_1_1iterator}\index{A\-V\-L$<$ T, comparar $>$\-::iterator@{A\-V\-L$<$ T, comparar $>$\-::iterator}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classAVL_1_1iterator_aac7d1d8a40c1e1f97a4f61227e383672}{\hyperlink{classAVL_1_1iterator_aac7d1d8a40c1e1f97a4f61227e383672}{iterator} ()}\label{classAVL_1_1iterator_aac7d1d8a40c1e1f97a4f61227e383672}
+
+\begin{DoxyCompactList}\small\item\em Constructor primitivo por defecto. \end{DoxyCompactList}\item 
+\hypertarget{classAVL_1_1iterator_adee84db4341bcbff00677d796a50d21a}{\hyperlink{classAVL_1_1iterator_adee84db4341bcbff00677d796a50d21a}{iterator} (const \hyperlink{classAVL_1_1iterator}{iterator} \&ite)}\label{classAVL_1_1iterator_adee84db4341bcbff00677d796a50d21a}
+
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+\hyperlink{classAVL_1_1iterator}{iterator} \& \hyperlink{classAVL_1_1iterator_a3a3faae96c4a6291e4a3bb5beaf70e4e}{operator++} ()
+\begin{DoxyCompactList}\small\item\em Operador de incremento. \end{DoxyCompactList}\item 
+std\-::pair$<$ T, int $>$ \hyperlink{classAVL_1_1iterator_aa15920d28cc0ca599f7e4c1af6018d17}{operator$\ast$} () const 
+\begin{DoxyCompactList}\small\item\em Obtener el elemento al que apunta el iterator. \end{DoxyCompactList}\item 
+bool \hyperlink{classAVL_1_1iterator_a7013fa8bae356623395419f1385d378a}{operator==} (const \hyperlink{classAVL_1_1iterator}{iterator} \&i) const 
+\begin{DoxyCompactList}\small\item\em Comparaci�n de igualdad. \end{DoxyCompactList}\item 
+bool \hyperlink{classAVL_1_1iterator_a36426619a9cc6439c48cb6e7a2a739ff}{operator!=} (const \hyperlink{classAVL_1_1iterator}{iterator} \&i) const 
+\item 
+\hypertarget{classAVL_1_1iterator_a12d8c5803081e2e4c1f1a48feb0c9a66}{\hyperlink{classAVL_1_1iterator}{iterator} \& {\bfseries operator=} (const \hyperlink{classAVL_1_1iterator}{iterator} \&i)}\label{classAVL_1_1iterator_a12d8c5803081e2e4c1f1a48feb0c9a66}
+
+\item 
+\hypertarget{classAVL_1_1iterator_ad5a8beb6fb9bff842016128459e90b90}{\hyperlink{classAVL_1_1iterator}{iterator} \& {\bfseries operator-\/-\/} ()}\label{classAVL_1_1iterator_ad5a8beb6fb9bff842016128459e90b90}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classAVL_1_1iterator_acba9d79a1cae18f44a9bf4aa4d0de787}{class {\bfseries A\-V\-L}}\label{classAVL_1_1iterator_acba9d79a1cae18f44a9bf4aa4d0de787}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classAVL_1_1iterator_a36426619a9cc6439c48cb6e7a2a739ff}{\index{A\-V\-L\-::iterator@{A\-V\-L\-::iterator}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!AVL::iterator@{A\-V\-L\-::iterator}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T, class comparar = std\-::less$<$\-T$>$$>$ bool {\bf A\-V\-L}$<$ T, comparar $>$\-::iterator\-::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf iterator} \&}]{i}
+\end{DoxyParamCaption}
+) const}}\label{classAVL_1_1iterator_a36426619a9cc6439c48cb6e7a2a739ff}
+Comparacion de igualdad.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Segundo iterador en la comparaci�n. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false, si el receptor e i tienen el mismo valor. true, en caso contrario. 
+\end{DoxyReturn}
+\hypertarget{classAVL_1_1iterator_aa15920d28cc0ca599f7e4c1af6018d17}{\index{A\-V\-L\-::iterator@{A\-V\-L\-::iterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!AVL::iterator@{A\-V\-L\-::iterator}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T, class comparar = std\-::less$<$\-T$>$$>$ std\-::pair$<$ T, int $>$ {\bf A\-V\-L}$<$ T, comparar $>$\-::iterator\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classAVL_1_1iterator_aa15920d28cc0ca599f7e4c1af6018d17}
+
+
+Obtener el elemento al que apunta el iterator. 
+
+\begin{DoxyPrecond}{Precondition}
+El B\-S\-T asociado N\-O ha sido modificado despu�s de la creaci�n del iterador receptor. 
+
+El iterador receptor N\-O est� al final del recorrido\-: (receptor) != end()
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+El par $<$Key,T$>$ correspondiente al dato de la posici�n actual del recorrido. 
+\end{DoxyReturn}
+\hypertarget{classAVL_1_1iterator_a3a3faae96c4a6291e4a3bb5beaf70e4e}{\index{A\-V\-L\-::iterator@{A\-V\-L\-::iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!AVL::iterator@{A\-V\-L\-::iterator}}
+\subsubsection[{operator++}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T, class comparar = std\-::less$<$\-T$>$$>$ {\bf A\-V\-L}$<$ T, comparar $>$\-::{\bf iterator} \& {\bf A\-V\-L}$<$ T, comparar $>$\-::iterator\-::operator++ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classAVL_1_1iterator_a3a3faae96c4a6291e4a3bb5beaf70e4e}
+
+
+Operador de incremento. 
+
+\begin{DoxyPrecond}{Precondition}
+El B\-S\-T asociado N\-O ha sido modificado despu�s de la creaci�n del iterador receptor. 
+
+El iterador receptor N\-O est� al final del recorrido\-: (receptor) != end()
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+Posici�n actual en el recorrido creciente del B\-S\-T asociado.
+\end{DoxyReturn}
+Modifica el (iterador) receptor haci�ndolo apuntar al siguiente elemento en el recorrido creciente del B\-S\-T asociado. \hypertarget{classAVL_1_1iterator_a7013fa8bae356623395419f1385d378a}{\index{A\-V\-L\-::iterator@{A\-V\-L\-::iterator}!operator==@{operator==}}
+\index{operator==@{operator==}!AVL::iterator@{A\-V\-L\-::iterator}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T, class comparar = std\-::less$<$\-T$>$$>$ bool {\bf A\-V\-L}$<$ T, comparar $>$\-::iterator\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf iterator} \&}]{i}
+\end{DoxyParamCaption}
+) const}}\label{classAVL_1_1iterator_a7013fa8bae356623395419f1385d378a}
+
+
+Comparaci�n de igualdad. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Segundo iterador en la comparaci�n. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, si el receptor e i tienen el mismo valor. false, en caso contrario. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+avl.\-h\item 
+avl.\-hxx\end{DoxyCompactItemize}
