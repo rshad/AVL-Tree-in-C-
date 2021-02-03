@@ -1,4 +1,4 @@
-# AVL-Tree-in-C-Plus-Plus
+# AVL Tree implementation in C++
 
 #### Description:
-Programming the different functionalities of AVL tree in C++, so I can demonstrate the correct understanding of AVL functions
+Implements the different functionalities of AVL tree in C++. This project is the result of an academic course in my BSc degree studies.
